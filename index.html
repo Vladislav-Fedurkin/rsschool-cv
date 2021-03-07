@@ -27,7 +27,65 @@
         </div>
       </div>
     </header>
-    
+
+    <main class="main">
+      <h3>Experience</h3>
+
+      <ul>
+        <li>
+          01.08.2020-current time
+        <li class="point">I started learning the HTML, CSS, JS, Git programming languagein September.No experience in
+          production.</li>
+        </li>
+      </ul>
+
+      <h3>Education</h3>
+      <ul>
+        <li>Belarusian National Technical University</li>
+        <li class="point">Theoretical mechanics and mechatronics</li>
+        <li class="point">
+          English A2
+        </li>
+      </ul>
+      <section>
+        <h3>Code example</h3>
+
+        <div>The following part of the code I wrote for the button in <mark>Canvas</mark></div>
+
+        <pre class="exaple-code">
+          <code>
+            export default class Button {
+              constructor(options) {
+                if (!options) throw new Error('Button options missing');
+  
+                this.x = options.x;
+                this.y = options.y;
+                this.height = options.height;
+                this.width = options.width;
+                this.iconUrl = options.iconUrl;
+                this.clickHandler = options.clickHandler;
+  
+                if (options.iconUrl) {
+                  this.setIcon(options.iconUrl);
+                } else {
+                  this.icon = null;
+                }
+              }
+  
+              setIcon(url) {
+                const icon = new Image();
+                icon.src = url;
+                this.icon = icon;
+              }
+  
+              render(context) {
+                context.drawImage(this.icon, this.x, this.y);
+              }
+            }
+          </code>
+        </pre>
+      </section>
+    </main>
   </div>
 
 </body>
