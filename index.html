@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img class="avatar" src="./assets/avatar.jpg" alt="avatar">
+        <div class="info">
+          <h1 class="name">Vladislav Fedurkin</h1>
+          <div class="additional-info">
+            <span class="additional-info-item"><strong>Phone:</strong> +375296426412</span>
+            <span class="additional-info-item"><strong>E-mail:</strong> vladislav.fedurkin@gmail.com</span>
+            <span class="additional-info-item"><strong>Date of birth:</strong> 05.07.2003</span>
+            <div><br><em>A motivated student who wants to be a good specialist frontend developer.
+                Has such qualities as: Diligence, Ability to work in a team, responsiveness,
+                responsibility.</em>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <h3>Experience</h3>
+        <ul>
+          <li>
+            01.08.2020-current time
+          <li class="point">I started learning the HTML, CSS, JS, Git programming languagein September.No experience in
+            production.</li>
+          </li>
+        </ul>
+
+        <h3>Education</h3>
+        <ul>
+          <li>Belarusian National Technical University</li>
+          <li class="point">Theoretical mechanics and mechatronics</li>
+          <li class="point">
+            English A2
+          </li>
+        </ul>
+        <section>
+          <h3>Code example</h3>
+          <div>The following part of the code I wrote for the button in <mark>Canvas</mark></div>
+
+          <pre class="exaple-code">
+            <code>
+              export default class Button {
+                constructor(options) {
+                  if (!options) throw new Error('Button options missing');
+
+                  this.x = options.x;
+                  this.y = options.y;
+                  this.height = options.height;
+                  this.width = options.width;
+                  this.iconUrl = options.iconUrl;
+                  this.clickHandler = options.clickHandler;
+
+                  if (options.iconUrl) {
+                    this.setIcon(options.iconUrl);
+                  } else {
+                    this.icon = null;
+                  }
+                }
+
+                setIcon(url) {
+                  const icon = new Image();
+                  icon.src = url;
+                  this.icon = icon;
+                }
+
+                render(context) {
+                  context.drawImage(this.icon, this.x, this.y);
+                }
+              }
+            </code>
+          </pre>
+        </section>
+      </main>
+      <footer>
+        <a href="https://github.com/Vladislav-Fedurkin"><img class="icon" src="./assets/github.png" alt="github"></a>
+        <a href="https://vk.com/id202595560"><img class="icon" src="./assets/vk.png" alt="vk.com"></a>
+      </footer>
+    </div>
+  </body>
+</html>
