@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  min-height: 100%;
+  padding-bottom: 90px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.avatar {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: solid black 1px;
+}
+
+.info {
+  width: 100%;
+}
+
+.name {
+  text-align: center;
+}
+
+.additional-info {
+  width: 100%;
+  text-align: center;
+}
+
+.additional-info-item {
+  margin: 20px;
+}
