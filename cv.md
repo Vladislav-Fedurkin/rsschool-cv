@@ -8,4 +8,8 @@ _A motivated student who wants to be a good specialist frontend developer. Has s
 #### Experience
 - **01.08.2020-current time**
 
-    - I started learning the HTML, CSS, JS, Git programming language in September. No experience in production.
+    - I started learning the HTML, CSS, JS, Git programming language in September. No experience in production.  
+#### Education
+- **Belarusian National Technical University**
+    - Theoretical mechanics and mechatronics
+- **English A2**
