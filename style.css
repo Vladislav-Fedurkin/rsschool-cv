@@ -31,12 +31,14 @@ body {
 }
 
 .additional-info {
+  display: flex;
   width: 100%;
   text-align: center;
 }
 
-.additional-info-item {
+.additional-info-item {  
   margin: 20px;
+  list-style: none;
 }
 
 .main {
