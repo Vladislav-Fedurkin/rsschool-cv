@@ -53,3 +53,12 @@ body {
   background: black;
   color: white;
 }
+
+footer {
+  text-align: center;
+}
+
+.icon {
+  width: 30px;
+  
+}
